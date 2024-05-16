@@ -1,6 +1,8 @@
 #
 # Copyright 2017 The Android Open Source Project
 #
+# Copyright (C) 2024 The OrangeFox Recovery Project
+#
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -54,4 +56,5 @@ COMMON_PATH := device/$(PRODUCT_BRAND)/$(COMMON_SOC)-common
 DEVICE_PATH := device/$(PRODUCT_BRAND)/$(PRODUCT_DEVICE)
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, $(DEVICE_PATH)/device-$(PRODUCT_DEVICE).mk)
+$(call inherit-product, $(DEVICE_PATH)/device.mk)
+#
