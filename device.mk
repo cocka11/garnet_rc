@@ -21,6 +21,10 @@
 # include (not inherit-product) the common settings - works better with device-specific files
 -include $(COMMON_PATH)/device-common.mk
 
+# OEM otacert
+PRODUCT_EXTRA_RECOVERY_KEYS += \
+    vendor/recovery/security/miui
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
