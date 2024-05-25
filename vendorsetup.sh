@@ -23,14 +23,14 @@ FDEVICE="garnet"
 THIS_DEVICE=${BASH_ARGV[2]}
 
 fetch_sm84xx_common_repo() {
-	local URL=https://github.com/nebrassy/device_xiaomi_sm84xx-common-TWRP.git;
+	local URL=https://gitlab.com/OrangeFox/device/device_xiaomi_sm84xx-common.git;
 	local common=device/xiaomi/sm84xx-common;
 
 	if [ ! -d $common ]; then
 		echo "Cloning $URL ... to $common";
 		git clone $URL $common;
 	else
-		echo "Common repository: \"$common\" found ..."
+		echo "Device common repository: \"$common\" found ..."
 	fi
 }
 
@@ -54,6 +54,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 		exit 1
 	fi
 
+	# sm84xx-common
 	fetch_sm84xx_common_repo;
 
 	export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-v27.0.zip
