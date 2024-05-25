@@ -51,4 +51,11 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # device-specific fstab
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
+
+# -------- from lineage DT -------------
+# we're qcom
+BOARD_USES_QCOM_HARDWARE := true
+
+BOARD_USES_GENERIC_KERNEL_IMAGE := true
+
 #
