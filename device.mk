@@ -21,6 +21,12 @@
 # include (not inherit-product) the common settings - works better with device-specific files
 -include $(COMMON_PATH)/device-common.mk
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+# Enable virtual A/B OTA
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
+
 # clear this, so that the device-specifc recovery/root/ folder is included automatically by the build system
 # requires including, rather than inheriting the common settings
 TARGET_RECOVERY_DEVICE_DIRS :=
