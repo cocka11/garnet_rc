@@ -34,7 +34,7 @@ OF_ENABLE_LPTOOLS := 1
 OF_NO_TREBLE_COMPATIBILITY_CHECK := 1
 
 # number of list options before scrollbar creation
-OF_OPTIONS_LIST_NUM := 6
+OF_OPTIONS_LIST_NUM := 9
 
 # ----- data format stuff -----
 # ensure that /sdcard is bind-unmounted before f2fs data repair or format
