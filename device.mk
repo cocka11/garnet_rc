@@ -21,6 +21,17 @@
 # include (not inherit-product) the common settings - works better with device-specific files
 -include $(COMMON_PATH)/device-common.mk
 
+TW_DEFAULT_LANGUAGE     := en
+TW_USE_TOOLBOX          := true
+TW_INCLUDE_NTFS_3G      := true
+TW_INCLUDE_FUSE_EXFAT   := true
+TW_INCLUDE_FUSE_NTFS    := true
+TW_INCLUDE_REPACKTOOLS  := true
+TW_INCLUDE_LIBRESETPROP := true
+TW_EXTRA_LANGUAGES      := true
+TW_EXCLUDE_APEX         := true
+TW_INCLUDE_FASTBOOTD    := true
+
 # OEM otacert
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/recovery/security/miui
