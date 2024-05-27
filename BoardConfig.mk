@@ -42,8 +42,11 @@ TW_SUPPORT_INPUT_AIDL_HAPTICS_FQNAME := "IVibrator/vibratorfeature"
 TARGET_RECOVERY_DEVICE_MODULES += libexpat
 RECOVERY_LIBRARY_SOURCE_FILES += $(TARGET_OUT_SHARED_LIBRARIES)/libexpat.so
 
+# default brightness
+TW_DEFAULT_BRIGHTNESS := 1023
+
 # max brightness
-TW_MAX_BRIGHTNESS := 840
+TW_MAX_BRIGHTNESS := 3071
 
 # device-specific system/vendor props
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
