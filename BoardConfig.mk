@@ -48,6 +48,9 @@ TW_DEFAULT_BRIGHTNESS := 1023
 # max brightness
 TW_MAX_BRIGHTNESS := 3071
 
+# enable screen blanking (disable this if some touch panels misbehave)
+TW_NO_SCREEN_BLANK := true
+
 # device-specific system/vendor props
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
