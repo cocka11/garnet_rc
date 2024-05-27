@@ -1,5 +1,5 @@
-# OrangeFox device tree for Xiaomi Redmi Note 13 Pro 5G / POCO X6 5G (codenamed _garnet_)
-
+## Xiaomi Redmi Note 13 Pro 5G / POCO X6 5G (_garnet_)
+## OrangeFox device tree
 
 ## Device specifications
 
