@@ -56,4 +56,8 @@ PRODUCT_COPY_FILES += \
 
 # some OrangeFox-specific settings
 $(call inherit-product, $(DEVICE_PATH)/fox_garnet.mk)
+
+# modules
+PRODUCT_PACKAGES += \
+    garnet_modules
 #
