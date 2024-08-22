@@ -23,12 +23,12 @@ FDEVICE="garnet"
 THIS_DEVICE=${BASH_ARGV[2]}
 
 fetch_sm84xx_common_repo() {
-	local URL=https://gitlab.com/OrangeFox/device/device_xiaomi_sm84xx-common.git;
+	local URL=git@gitlab.com:OrangeFox/device/sm84xx-common.git;
 	local common=device/xiaomi/sm84xx-common;
 
 	if [ ! -d $common ]; then
 		echo "Cloning $URL ... to $common";
-		git clone $URL $common;
+		git clone $URL -b fox_12.1 $common;
 	else
 		echo "Device common repository: \"$common\" found ..."
 	fi
