@@ -3,7 +3,7 @@
 # set some props, depending on device
 #
 #	This file is part of the OrangeFox Recovery Project
-# 	Copyright (C) 2024 The OrangeFox Recovery Project
+# 	Copyright (C) 2024-2025 The OrangeFox Recovery Project
 #
 #	OrangeFox is free software: you can redistribute it and/or modify
 #	it under the terms of the GNU General Public License as published by
@@ -44,6 +44,7 @@ do_props() {
     resetprop "ro.product.vendor.model" "$model";
     resetprop "ro.product.system_ext.model" "$model";
     resetprop "ro.product.product.model" "$model";
+    resetprop "ro.product.bootimage.model" "$model";
 
     resetprop "ro.product.marketname" "$device_description";
     resetprop "ro.product.odm.marketname" "$device_description";
