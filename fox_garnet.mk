@@ -1,6 +1,6 @@
 #
 #	This file is part of the OrangeFox Recovery Project
-# 	Copyright (C) 2024 The OrangeFox Recovery Project
+# 	Copyright (C) 2024-2025 The OrangeFox Recovery Project
 #
 #	OrangeFox is free software: you can redistribute it and/or modify
 #	it under the terms of the GNU General Public License as published by
@@ -57,4 +57,7 @@ OF_LOOP_DEVICE_ERRORS_TO_LOG := 1
 
 # lz4 compression
 OF_USE_LZ4_COMPRESSION := 1 
+
+# build all the partition tools
+OF_ENABLE_ALL_PARTITION_TOOLS := 1
 #
