@@ -17,4 +17,7 @@ vendor.usb.use_ffs_mtp=1
 
 # OTG
 persist.sys.oem.otg_support=true
+
+# API
+ro.vendor.api_level=31
 #
