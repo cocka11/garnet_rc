@@ -1,7 +1,7 @@
 #
 # Copyright 2017 The Android Open Source Project
 #
-# Copyright (C) 2024 The OrangeFox Recovery Project
+# Copyright (C) 2024-2025 The OrangeFox Recovery Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -57,6 +57,9 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # device-specific fstab
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
+
+# kernel
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)//prebuilt/kernel
 
 # -------- from lineage DT -------------
 # we're qcom
