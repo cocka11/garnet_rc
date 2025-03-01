@@ -28,7 +28,7 @@ fetch_sm84xx_common_repo() {
 
 	if [ ! -d $common ]; then
 		echo "Cloning $URL ... to $common";
-		git clone $URL -b fox_12.1 $common;
+		git clone $URL -b fox_14.1 $common;
 	else
 		echo "Device common repository: \"$common\" found ..."
 	fi
