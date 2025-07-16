@@ -30,7 +30,10 @@ fetch_sm84xx_common_repo() {
 		echo "Cloning $URL ... to $common";
 		git clone $URL -b fox_12.1 $common;
 	else
-		echo "Device common repository: \"$common\" found ..."
+		local here=$PWD;
+		echo "Device common repository: \"$common\" found. Seeing whether there are updates ...";
+		cd $common && git pull;
+		cd $here;
 	fi
 }
 
