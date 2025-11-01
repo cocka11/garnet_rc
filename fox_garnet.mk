@@ -56,4 +56,7 @@ OF_USE_LZ4_COMPRESSION := 1
 
 # build all the partition tools
 OF_ENABLE_ALL_PARTITION_TOOLS := 1
+
+# enable the FRP addon
+OF_ENABLE_FRP_ADDON := 1
 #
